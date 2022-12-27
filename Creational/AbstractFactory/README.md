@@ -1,0 +1,3 @@
+Abstract Factory
+
+Creacion de objetos agrupados en familias sin tener que conocer las classe concretas destinadas a la creation de estos objetos

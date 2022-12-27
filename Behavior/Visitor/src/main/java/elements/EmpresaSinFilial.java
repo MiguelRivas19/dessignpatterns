@@ -1,0 +1,20 @@
+package elements;
+
+import visitor.Visitante;
+
+public class EmpresaSinFilial extends Empresa {
+
+    public EmpresaSinFilial(String nombre, String email, String direccion) {
+        super(nombre, email, direccion);
+    }
+
+    @Override
+    public boolean agregaFilial(Empresa filial) {
+        return false;
+    }
+
+    @Override
+    public void aceptaVisitante(Visitante visitante) {
+        visitante.visita(this);
+    }
+}
